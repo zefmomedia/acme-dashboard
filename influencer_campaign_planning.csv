@@ -1,9 +1,202 @@
-X Handle,Name,Niche/Category,Followers,Engagement Rate Estimate,Content Focus,Campaign Fit,Estimated Cost Range (INR),Best Content Format,Contact Method,Priority Tier,Notes
-@TheVivekSinghal,Vivek Singhal,Finance & Investment,Unknown (est. 50K-100K),Medium-High,"Stock market, portfolio management, investment research",High - SEBI registered authority,"₹50,000 - ₹1,50,000","Educational threads, market analysis, live Q&A",Website contact form / DM,Tier 1,SEBI registration adds high credibility for fintech/investment products
-@Debabrata_222,Debabrata,Tech & Engineering,484,Low-Medium,"Systems engineering, UAV, databases, open source",Niche - Technical audience,"₹5,000 - ₹15,000","Technical deep-dives, code tutorials, project showcases",GitHub / DM,Tier 3,Small but highly targeted developer/engineer audience
-@pushpendrakum,Pushpendra Singh,"Crypto, Web3, Finance & Tech",441.8K,High,"Crypto, Web3, Bitcoin, finance, policy",Very High - Large engaged community,"₹2,00,000 - ₹5,00,000","Educational videos, thread storms, AMAs, YouTube collabs",pksjobhub@gmail.com,Tier 1,"Binance Rank 1 winner, 1M+ community across platforms, partnership email listed"
-@HansrajMeena,Hansraj Meena,"Activism, Social Issues, Politics",765.2K,High,"Tribal rights, farmer issues, social justice, environment",High for social impact,"₹1,50,000 - ₹4,00,000","Hindi video content, grassroots storytelling, live ground reports",Instagram / DM,Tier 1,"Massive trust factor, Hindi belt reach, strong community mobilization"
-@IshanTanna1,Ishan Tanna,"Local News, Civic Issues, Bengaluru",Unknown (est. 10K-50K),Medium,"Bengaluru traffic, civic issues, local governance",Medium - Hyperlocal,"₹10,000 - ₹30,000","Real-time updates, civic alert threads, local event coverage",DM,Tier 2,"Strong Bengaluru hyperlocal influence, good for location-based campaigns"
-@manoj_216,Manoj Arora,"Personal Finance, Author, Environment",19.2K,Medium-High,"Financial freedom, investing, books, environmentalism",Good - Niche finance audience,"₹25,000 - ₹75,000","Book-based content, financial literacy threads, coaching snippets",Website / DM,Tier 2,"Bestselling author credibility, engaged finance/self-help audience"
-@aravind,Aravind Srinivas,"AI, Technology, Entrepreneurship",Unknown (est. 100K+),High,"AI, search tech, entrepreneurship, leadership",Premium - Decision maker audience,"₹5,00,000 - ₹15,00,000+","Thought leadership posts, product announcements, tech debates",Via Perplexity AI press/contact,Tier 1 (Premium),"CEO of Perplexity AI, global tech authority, premium pricing expected"
-@CAronitpereira,Ronit Pereira,"Finance, Tax, CA, AI, Business","15,344",Medium-High,"CA, taxation, finance, AI in finance, career",Good - Professional finance audience,"₹30,000 - ₹80,000","Educational reels, tax tips, CA journey content, finance+AI",YouTube / DM,Tier 2,"CA credential + AI focus, growing YouTube, professional audience"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACME Poshan — Campaign Performance · as on 8 June 2026</title>
+<style>
+:root{
+  --green:#1F7A3D; --green-deep:#14532A; --green-soft:#E8F3EC;
+  --ochre:#B07A1E; --ochre-deep:#7A5410; --ochre-soft:#FBF1DD;
+  --blue:#1F5E8C; --blue-soft:#E6F0F6; --blue-deep:#16456A;
+  --ink:#1C2620; --muted:#6B7A70; --line:#E2E8E3;
+  --paper:#FBFCFB; --card:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;background:var(--paper);color:var(--ink);
+  -webkit-font-smoothing:antialiased;line-height:1.45;padding:34px 22px}
+.wrap{max-width:980px;margin:0 auto}
+
+header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;
+  padding-bottom:20px;border-bottom:2px solid var(--green)}
+.brandmark{display:flex;align-items:center;gap:10px}
+.dot{width:13px;height:13px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px var(--green-soft)}
+h1{font-size:25px;font-weight:700;letter-spacing:-.01em;color:var(--green-deep)}
+.sub{font-size:13px;color:var(--muted);margin-top:5px}
+.statusrow{margin-top:9px}
+.meta{text-align:right;font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.meta b{display:block;font-size:15px;color:var(--ink);font-weight:700}
+.asof{font-size:11px;color:var(--muted);font-style:italic;margin-top:2px}
+
+.combined{display:flex;flex-wrap:wrap;gap:26px;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:16px 22px;margin-top:18px}
+.combined .ci .v{font-size:21px;font-weight:700;color:var(--green-deep)}
+.combined .ci .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+
+.alert{display:flex;gap:14px;align-items:flex-start;border-radius:10px;padding:15px 18px;margin:16px 0 6px;
+  background:var(--green-soft);border:1px solid #CDE5D6;border-left:4px solid var(--green)}
+.alert .ic{font-size:18px;color:var(--green);font-weight:700;line-height:1.5}
+.alert h3{font-size:14px;color:var(--green-deep);margin-bottom:3px}
+.alert p{font-size:12.5px;color:#3C5145}
+
+.shead{display:flex;align-items:center;gap:12px;margin:30px 0 14px}
+.shead h2{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+.shead .ln{flex:1;height:1px;background:var(--line)}
+.shead .tag{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--muted);background:#F1F4F2;padding:3px 9px;border-radius:999px}
+.shead .tag.g{background:var(--green-soft);color:var(--green-deep)}
+.shead .tag.b{background:var(--blue-soft);color:var(--blue-deep)}
+
+.kgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--muted)}
+.kpi.ok::before{background:var(--green)} .kpi.ochre::before{background:var(--ochre)} .kpi.b::before{background:var(--blue)}
+.kpi .lbl{font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--muted);text-transform:uppercase}
+.kpi .val{font-size:29px;font-weight:700;letter-spacing:-.02em;margin:6px 0 2px;color:var(--ink)}
+.kpi.ok .val{color:var(--green-deep)} .kpi.ochre .val{color:var(--ochre-deep)} .kpi.b .val{color:var(--blue-deep)}
+.kpi .foot{font-size:11.5px;color:var(--muted)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:10px 14px;text-align:right;font-size:12.5px;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+thead th{background:#F1F4F2;color:var(--muted);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:700}
+tbody tr:last-child td{border-bottom:none}
+tr.total td{font-weight:700;background:var(--green-soft);color:var(--green-deep)}
+td.dim{color:var(--muted)}
+.bar{height:7px;border-radius:4px;background:var(--green);display:inline-block;vertical-align:middle;margin-right:7px}
+.note{font-size:11px;color:var(--muted);font-style:italic;margin-top:9px}
+.pill{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.03em;padding:2px 8px;border-radius:999px;background:var(--green-soft);color:var(--green-deep)}
+.pill.b{background:var(--blue-soft);color:var(--blue-deep)}
+
+footer{margin-top:32px;padding-top:15px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11.5px;color:var(--muted)}
+
+@media(max-width:760px){.kgrid{grid-template-columns:repeat(2,1fr)} .two{grid-template-columns:1fr} h1{font-size:21px}
+  th,td{padding:9px 8px;font-size:11.5px}}
+@media print{body{padding:0} .kpi,table,.alert,.combined{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <div class="brandmark"><span class="dot"></span><h1>HoReCa</h1></div>
+      <div class="sub">Meta lead-generation + Google Performance Max · executive dashboard</div>
+      <div class="statusrow"><span class="sub" style="margin:0">Meta: ACME Campaign 02-06-2026 (Reel + Static) · Google: Website traffic — Performance Max</span></div>
+    </div>
+    <div class="meta">Report as on<b>10 June 2026</b>
+      <span class="asof">11:25 hrs IST</span></div>
+  </header>
+
+  <div class="combined">
+    <div class="ci"><div class="v">₹11,431</div><div class="l">Total media invested</div></div>
+    <div class="ci"><div class="v">368</div><div class="l">Meta leads</div></div>
+    <div class="ci"><div class="v">1,680</div><div class="l">Google clicks</div></div>
+    <div class="ci"><div class="v">₹0.85</div><div class="l">Google CPC</div></div>
+  </div>
+
+  <div class="alert">
+    <span class="ic">✓</span>
+    <div>
+      <h3>Strong, high-intent lead flow across both channels</h3>
+      <p>368 Meta leads at ₹26.93 each — concentrated in home kitchens, tiffin services and cloud kitchens across Delhi/NCR. Google Performance Max is adding 1,680 clicks at an ₹0.90 cost-per-click and a 12.2% click-through rate.</p>
+    </div>
+  </div>
+
+  <div class="shead"><h2>Meta — Lead Generation</h2><span class="ln"></span></div>
+  <div class="kgrid">
+    <div class="kpi ok"><div class="lbl">Leads Captured</div><div class="val">368</div><div class="foot">on-platform lead forms</div></div>
+    <div class="kpi ok"><div class="lbl">Cost per Lead</div><div class="val">₹26.93</div><div class="foot">blended average</div></div>
+    <div class="kpi"><div class="lbl">Total Spend</div><div class="val">₹9,910.97</div><div class="foot">to date</div></div>
+    <div class="kpi ok"><div class="lbl">Demo Requests</div><div class="val" style="font-size:18px">To be confirmed</div><div class="foot"></div></div>
+    <div class="kpi ochre"><div class="lbl">Total Reach</div><div class="val">53,791</div><div class="foot">accounts reached</div></div>
+    <div class="kpi ochre"><div class="lbl">Impressions</div><div class="val">80,927</div><div class="foot">ad views delivered</div></div>
+  </div>
+
+  <div class="two" style="margin-top:16px">
+    <div>
+      <div class="shead" style="margin-top:14px"><h2>By creative</h2><span class="ln"></span></div>
+      <table>
+        <thead><tr><th>Creative</th><th>Leads</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr><td>Static</td><td>361</td><td>98.1%</td></tr>
+          <tr><td>Reel</td><td>7</td><td>1.9%</td></tr>
+          <tr class="total"><td>Total</td><td>368</td><td>100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="shead" style="margin-top:14px"><h2>By platform</h2><span class="ln"></span></div>
+      <table>
+        <thead><tr><th>Platform</th><th>Leads</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr><td>Instagram</td><td>250</td><td>67.9%</td></tr>
+          <tr><td>Facebook</td><td>118</td><td>32.1%</td></tr>
+          <tr class="total"><td>Total</td><td>368</td><td>100%</td></tr>
+        </tbody>
+      </table>
+      <div class="note">Instagram is the primary lead source for this audience.</div>
+    </div>
+  </div>
+
+  <div class="shead"><h2>Lead intelligence</h2><span class="ln"></span><span class="tag">who's enquiring</span></div>
+  <div class="two">
+    <table>
+      <thead><tr><th>Business type</th><th>Leads</th></tr></thead>
+      <tbody>
+        <tr><td>Home kitchen</td><td>221</td></tr>
+        <tr><td>Other</td><td>72</td></tr>
+        <tr><td>Tiffin service</td><td>29</td></tr>
+        <tr><td>Cloud kitchen</td><td>19</td></tr>
+        <tr><td>Restaurant</td><td>11</td></tr>
+        <tr><td>Caterer</td><td>9</td></tr>
+        <tr><td>Langar / NGO kitchen</td><td>7</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <thead><tr><th>Location</th><th>Leads</th></tr></thead>
+      <tbody>
+        <tr><td>Delhi / NCR</td><td>115</td></tr>
+        <tr><td>Mumbai</td><td>29</td></tr>
+        <tr><td>Bangalore</td><td>11</td></tr>
+        <tr><td>Others</td><td>213</td></tr>
+        <tr class="total"><td>Total</td><td>368</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">Lead mix maps directly to ACME's HoReCa segments (home kitchens, tiffin, cloud kitchens, caterers), concentrated in Delhi-NCR — a strong base for institutional follow-up.</div>
+
+  <div class="shead"><h2>Google Ads — Performance Max</h2><span class="ln"></span></div>
+  <div class="kgrid">
+    <div class="kpi b"><div class="lbl">Cost</div><div class="val">₹1,519.79</div><div class="foot">to date</div></div>
+    <div class="kpi b"><div class="lbl">Clicks</div><div class="val">1,680</div><div class="foot">to website</div></div>
+    <div class="kpi b"><div class="lbl">Impressions</div><div class="val">13,738</div><div class="foot">served</div></div>
+    <div class="kpi ok"><div class="lbl">CTR</div><div class="val">12.2%</div><div class="foot">click-through rate</div></div>
+    <div class="kpi ok"><div class="lbl">Avg. CPC</div><div class="val">₹0.90</div><div class="foot">cost per click</div></div>
+    <div class="kpi"><div class="lbl">Daily Budget</div><div class="val">₹500</div><div class="foot">Maximize Conversions</div></div>
+  </div>
+  <div class="note">A 12.2% CTR at ₹0.90 CPC is a very efficient start.</div>
+
+  <div class="note">Campaign location: <b>Delhi-NCR</b> — 100% of delivery, aligned with the priority market.</div>
+
+  <div class="shead"><h2>Campaign inputs</h2><span class="ln"></span><span class="tag">reported</span></div>
+  <table>
+    <tbody>
+      <tr><td>Meta campaign</td><td>ACME Campaign 02-06-2026 (Reel + Static)</td></tr>
+      <tr><td>Google campaign</td><td>Website traffic — Performance Max-1</td></tr>
+      <tr><td>Result type</td><td>On-platform leads (Meta) · Website clicks (Google)</td></tr>
+      <tr><td>Attribution (Meta)</td><td>7-day click / 1-day view</td></tr>
+      <tr><td>Bid strategy (Google)</td><td>Maximize Conversions</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <span>ACME Poshan × Zefmo Media · Meta + Google performance</span>
+    <span>Report as on 10 June 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
